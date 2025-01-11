@@ -9,15 +9,12 @@ function App() {
     <div className="App">
       <Header />
       <div className="container1">
-        <SideBar/>
+        <SideBar />
         <div className="container2">
           <Graph />
           <Table />
         </div>
-        
       </div>
-      
-      
     </div>
   );
 }
