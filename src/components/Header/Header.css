@@ -3,6 +3,7 @@ header {
   align-items: center;
   background-color: #062849;
   padding: 1rem;
+  width: 100%;
 }
 header img {
   width: 10%;
