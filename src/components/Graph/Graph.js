@@ -15,7 +15,7 @@ const Graph = () => {
   return (
     <div className="graph">
       <LineChart
-        width={1200}
+        width={800}
         height={500}
         data={sales}
         margin={{ top: 20, right: 30, left: 20, bottom: 0 }}
