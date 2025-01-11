@@ -8,16 +8,18 @@ import {
   Tooltip,
 } from "recharts";
 import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
+import { Sale } from "../../type";
 import "./Graph.css";
 
-const Graph = () => {
-  const sales = useSelector((state) => state.data.data[0].sales);
+const Graph: React.FC = () => {
+  const sales : Sale[] | undefined  = useSelector((state : RootState) => state.data.data[0]?.sales);
   return (
     <div className="graph">
       <LineChart
         width={900}
         height={500}
-        data={sales}
+        data={sales || []}
         margin={{ top: 20, right: 30, left: 20, bottom: 0 }}
       >
         <CartesianGrid strokeDasharray="3 3" />
